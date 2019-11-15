@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:weightSum="4"
+   android:layout_margin="5dp"
+    android:gravity="center"
+    android:background="@drawable/circle1"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="2"
+       android:layout_margin="5dp"
+
+      >
+
+       <TextView
+           android:id="@+id/dateTV"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:textColor="#2A5F3D"
+           android:text="01/12/2018"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:textSize="12sp"
+           android:textStyle="bold"
+           android:layout_margin="2dp"
+           android:layout_weight="0.6"/>
+
+
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+            android:id="@+id/lateTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/Black"
+            android:text="WO"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_margin="2dp"
+            android:background="@drawable/capsulep"
+
+
+            android:layout_weight="0.5"/>
+
+
+        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+            android:id="@+id/leaveTypeTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/White"
+            android:text="WO"
+            android:background="@drawable/capsulep"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_margin="2dp"
+
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/capsule"
+
+        >
+
+        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+            android:id="@+id/inoutTimeTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/White"
+            android:text="1"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="12sp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

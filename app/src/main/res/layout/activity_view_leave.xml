@@ -1,0 +1,1323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@drawable/app_back"
+        android:gravity="center"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="8dp"
+            android:layout_weight=".2"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:gravity="center">
+
+            <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leave Application Details"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight=".2"
+            android:gravity="center">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sc_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+       >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_emp_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:padding="5dp"
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Name  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_emp_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Application Date  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_app_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/employeeId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Id"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Name  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/employeeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Name"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Approver  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_approver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Leave Type  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_leave_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From  "
+                        android:textColor="#2A5F3D"
+                        android:visibility="gone"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_from_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="To  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_to_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:padding="5dp"
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="From  "
+                        android:textColor="#2A5F3D"
+                        android:visibility="gone"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_to_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="#2A5F3D"
+
+                        android:text="Employee Code"
+                        android:textSize="15sp" />
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Days  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textColor="#2A5F3D"
+
+                        android:text="Employee Code"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Remarks  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/apprRemarkLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".4"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Approver Remarks  "
+                        android:textColor="#2A5F3D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".6"
+                    android:gravity="center|left"
+                    android:orientation="horizontal"
+                    android:background="@drawable/editextback">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/tv_app_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Employee Code"
+                        android:textColor="#2A5F3D"
+
+                        android:padding="5dp"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_accRej"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_accept"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/app_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Accept"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/app_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Reject"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_cancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/app_back"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Cancel Leave"
+                    android:textColor="#ffffff" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="  L.T. = Leave Type"
+                    android:textColor="#2A5F3D"
+                    android:textSize="16sp" />
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="  CT.B.  = Current Balance"
+                    android:textColor="#2A5F3D"
+                    android:textSize="16sp" />
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="  A.A.  = Already Applied"
+                    android:textColor="#2A5F3D"
+                    android:textSize="16sp" />
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="  A.B.  = Available Balance"
+                    android:textColor="#2A5F3D"
+                    android:textSize="16sp" />
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="  A.F.  = Applying For"
+                    android:textColor="#2A5F3D"
+                    android:textSize="16sp" />
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="  C.B.  = Closign Balance"
+                    android:textColor="#2A5F3D"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:background="@drawable/app_back"
+                            android:text="L.T."
+                            android:textColor="#ffffff"
+                            android:textSize="16sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_LT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="CT.B."
+                            android:background="@drawable/app_back"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_co"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="A.A."
+                            android:background="@drawable/app_back"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp" />
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="A.B."
+                            android:background="@drawable/app_back"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp" />
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_PL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="A.F."
+                            android:background="@drawable/app_back"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp" />
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_OD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="C.B."
+                            android:background="@drawable/app_back"
+                            android:textColor="#ffffff"
+                            android:textSize="16sp" />
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_SL"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/app_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Close"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

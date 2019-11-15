@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@drawable/app_back"
+        android:gravity="center"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:id="@+id/ll_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="8dp"
+            android:layout_weight=".2"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:gravity="center">
+
+            <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Application"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:layout_weight=".2"
+            android:gravity="center">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Employee Code  "
+                        android:textColor="#3C763D"
+
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/editextback"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/edit_emp_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="Emp Code"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="#3C763D"
+                        android:textColorHint="#d2d2d2"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Employee Name  "
+                        android:textColor="#3C763D"
+
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/editextback"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/edit_emp_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="Emp Name"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="#3C763D"
+                        android:textColorHint="#d2d2d2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Application Date  "
+                        android:textSize="15sp"
+                        android:textColor="#3C763D"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/editextback"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:id="@+id/edit_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="Date"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="#3C763D"
+                        android:textColorHint="#d2d2d2"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Approver  "
+                        android:textColor="#3C763D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/editextback"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:id="@+id/edit_approver"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:maxLength="30"
+                        android:singleLine="true"
+
+                        android:textColor="#3C763D"
+                        android:textColorHint="#d2d2d2"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Leave Type  "
+                        android:textColor="#3C763D"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/editextback"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/spinner_leave"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:gravity="center"
+                            tools:ignore="NestedWeights" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:src="@mipmap/arraow_down" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_date_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="  From  "
+
+                            android:textColor="#3C763D"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight=".5"
+                        android:background="@drawable/editextback"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_from_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="DD/MM/YYYY"
+                            android:maxLength="30"
+                            android:padding="6dp"
+                            android:singleLine="true"
+                            android:textColor="#3C763D"
+                            android:textColorHint="#d2d2d2"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="  From  "
+                            android:visibility="gone"
+
+                            android:textColor="#3C763D"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/editextback"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/sp_From"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:entries="@array/From"
+                                    android:gravity="center"
+                                    tools:ignore="NestedWeights" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center"
+                                    android:src="@mipmap/arraow_down" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="  To  "
+                            android:textColor="#3C763D"
+
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight=".5"
+                        android:background="@drawable/editextback"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_from_date1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="DD/MM/YYYY"
+                            android:maxLength="30"
+                            android:padding="6dp"
+                            android:singleLine="true"
+                            android:textColor="#3C763D"
+                            android:textColorHint="#d2d2d2"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="  To  "
+                            android:visibility="gone"
+                            android:textColor="#3C763D"
+
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight=".5"
+                        android:orientation="vertical">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/editextback"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/spinner_to"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:entries="@array/To"
+                                    android:gravity="center"
+                                    tools:ignore="NestedWeights" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center"
+                                    android:src="@mipmap/arraow_down" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="  Days  "
+                            android:textColor="#3C763D"
+
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/editextback"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/edit_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="Days"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:textColor="#3C763D"
+                            android:textColorHint="#d2d2d2"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="From : "
+
+                            android:textColor="#2A5F3D"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight=".5"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:background="@drawable/editextback"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/fromLL"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="5dp"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <Spinner
+                                    android:id="@+id/sp_From_time1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:gravity="center"
+                                    android:layout_weight="0.5"
+                                    tools:ignore="NestedWeights" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right|center"
+
+                                        android:src="@mipmap/arraow_down" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight=".45"
+                            android:background="@drawable/editextback"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/sp_From_time2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:entries="@array/Min"
+                                    android:gravity="center"
+                                    tools:ignore="NestedWeights" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center"
+                                    android:src="@mipmap/arraow_down" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="To : "
+
+                            android:textColor="#2A5F3D"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight=".5"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_weight=".45"
+                            android:background="@drawable/editextback"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="5dp"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/sp_to_time1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="end|center"
+                                    android:textSize="14sp"
+                                    android:layout_weight="0.5"
+                                     />
+
+                              <LinearLayout
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.5"
+                                  >
+                                  <ImageView
+                                      android:layout_width="wrap_content"
+                                      android:layout_height="wrap_content"
+                                      android:layout_gravity="right|center"
+
+                                      android:src="@mipmap/arraow_down" />
+                              </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight=".1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=":"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:layout_weight=".45"
+                            android:background="@drawable/editextback"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/sp_to_time2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@null"
+                                    android:entries="@array/Min"
+                                    android:gravity="center"
+                                    tools:ignore="NestedWeights" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right|center"
+                                    android:src="@mipmap/arraow_down" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+
+                        android:layout_weight=".5"
+                        android:gravity="center|left">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="For Date : "
+                            android:textColor="#2A5F3D"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/editextback"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/edit_for_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="10dp"
+                            android:background="@null"
+                            android:gravity="center|left"
+                            android:hint="ForDate"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:textColor="#3C763D"
+                            android:textColorHint="#d2d2d2"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight=".5"
+                    android:gravity="center|left">
+
+                    <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="  Remarks  "
+                        android:textColor="#3C763D"
+
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/editextback"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:hint="Remarks"
+                        android:maxLength="30"
+                        android:singleLine="true"
+                        android:textColor="#3C763D"
+                        android:textColorHint="#d2d2d2"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:weightSum="6">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/app_back"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="L.T."
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_LT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/app_back"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="CT.B."
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_CTB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/app_back"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="A.A."
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_AA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/app_back"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="A.B."
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_AB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/app_back"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="A.F."
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_AF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/app_back"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="C.B."
+                            android:textColor="#ffffff"
+                            android:textSize="15sp" />
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/gv_CB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_submit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/app_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Submit"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+
+                    <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/app_back"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Cancel"
+                        android:textColor="#ffffff" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="L.T. = Leave Type"
+                    android:textColor="#2A5F3D"
+                    android:textSize="15sp" />
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="CT.B. = Current Balance"
+                    android:textColor="#2A5F3D"
+                    android:textSize="15sp" />
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="A.A. = Already Applied"
+                    android:textColor="#2A5F3D"
+                    android:textSize="15sp" />
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="A.B. = Available Balance"
+                    android:textColor="#2A5F3D"
+                    android:textSize="15sp" />
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="A.F. = Applying For"
+                    android:textColor="#2A5F3D"
+                    android:textSize="15sp" />
+
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:text="C.B. = Closign Balance"
+                    android:textColor="#2A5F3D"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

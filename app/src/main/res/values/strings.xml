@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">HRM</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="month">
+        <item>Select Month</item>
+        <!--<item>January 2017</item>-->
+        <!--<item>February 2017</item>-->
+        <!--<item>March 2017</item>-->
+        <!--<item>April 2017</item>-->
+        <!--<item>May 2017</item>-->
+        <!--<item>June 2017</item>-->
+        <!--<item>July 2017</item>-->
+        <!--<item>August 2017</item>-->
+        <!--<item>September 2017</item>-->
+        <!--<item>October 2017</item>-->
+        <!--<item>November 2017</item>-->
+        <!--<item>December 2017</item>-->
+    </string-array>
+    <string name="permission_rationale">"Permissions are needed for providing email
+        completions."
+    </string>
+    <string name="channel_name">channel</string>
+    <string name="default_notification_channel_id">id</string>
+
+    <string-array name="status">
+
+        <item>Submitted</item>
+        <item>Approved</item>
+        <item>Rejected</item>
+        <item>Cancelled</item>
+    </string-array>
+
+
+    <!--<string-array name="LeaveType">-->
+
+        <!--<item>Select Leave</item>-->
+        <!--<item>Short Leave</item>-->
+        <!--<item>CL</item>-->
+        <!--<item>CO</item>-->
+        <!--<item>OD</item>-->
+        <!--<item>PL</item>-->
+        <!--<item>SL</item>-->
+        <!--<item>LWP</item>-->
+
+    <!--</string-array>-->
+
+
+    <string-array name="From">
+        <!--<item>Select</item>-->
+        <item>From First Half</item>
+        <item>From Second Half</item>
+
+    </string-array>
+
+
+    <string-array name="To">
+
+        <!--<item>Select</item>-->
+        <item>To Second Half</item>
+        <item>To First Half</item>
+
+    </string-array>
+
+
+    <string-array name="Hour">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>21</item>
+
+
+    </string-array>
+
+
+    <string-array name="Min">
+
+        <item>00</item>
+        <item>05</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+        <item>40</item>
+        <item>45</item>
+        <item>50</item>
+        <item>55</item>
+
+    </string-array>
+
+    <string-array name="Hour1">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+
+    </string-array>
+
+    <string name="title_activity_punch_attendance">Map</string>
+
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of HRM is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+
+</resources>

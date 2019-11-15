@@ -1,0 +1,3931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#f1f1f1"
+    android:gravity="center"
+    tools:context="com.hrm.hrm.Nav_List">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@drawable/app_back"
+            android:gravity="center"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="8dp"
+                android:layout_weight=".2"
+                android:gravity="center|left">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@mipmap/back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight=".6"
+                android:gravity="center">
+
+                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DashBord"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight=".2"
+                android:gravity="center">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tab_layout_loaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:tabIndicatorColor="#529CB7"
+                app:tabMode="scrollable" />
+
+            <ScrollView
+                android:id="@+id/sc_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tab_layout_loaction"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/ll_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F1F1F1"
+                    android:gravity="center|top"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_masterdetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Name"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="TK"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Emp-code"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_emp_code"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Emp-code"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Gender"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_gender"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Gender"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Date of Birth"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DOB"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Date of Birth"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Father Name"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_fathername"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Father Name"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Spouse Name"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_spousename"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Spouse Name"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Date of Confirmation"
+                                    android:textColor="#3C763D"
+                                    android:layout_weight="0.5"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_doc"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Date of Confirmation"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Date Of Joining"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_doj"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Date Of Joining"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PF Applicable"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_pf_applicable"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PF Applicable"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PF Appl. Date"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_pf_date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="PF Appl. Date"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="PF No."
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_pf_no"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="PF No."
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PF UAN"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_PFUAN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="PF UAN"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="ESIC Applicable"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_ESIC_Application"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:singleLine="true"
+                                    android:text="ESIC Applicable"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="ESIC NO"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_ESIC_no"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="ESIC NO"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="PAN NO"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_PAN"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PAN NO"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Aadhar"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_addhar"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Aadhar"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PT Application"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_pt_applicable"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="PT Application"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Age"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_age"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Age : 35"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:gravity="center|left"
+                                android:weightSum="1">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Branch"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_branch"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Branch : Gurgaon"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="GRADE"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_grade"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="GRADE"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Department : Research &amp; Development"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_dept"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Department : Research &amp; Development"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Designation"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_designation"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Designation"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Division"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_Division"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Division"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Division"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_cost_Center"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Division"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Project"
+                                    android:textColor="#2A5F3D"
+                                    android:layout_weight="0.5"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_project"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Project : None"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Category"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Category"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Category"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:gravity="center|left">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="PaymentMode"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_PaymentMode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="PaymentMode"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Bank Name"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Bankname"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Bank Name"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:gravity="center|left">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Account No."
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_AccountNo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Account No."
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Ifsc Code"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_IfscCode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Ifsc Code"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Account name"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_AccountName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Account name"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Date of leaving"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DOL"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Date of leaving"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_personal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:weightSum="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:singleLine="true"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_present_add"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+                                    android:layout_height="wrap_content"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="Permanent Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_permanent_add"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Telephone"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_telephone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Personal Mobile No"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:layout_weight="0.5"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_personal_mobile"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Official Mobile No"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Official_mobile"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Email Personal"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:layout_weight="0.5"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_email_personal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Email Official"
+                                    android:textColor="#3C763D"
+                                    android:layout_weight="0.5"
+
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_email_official"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+                                    android:text="ESIC Dispensary"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_esic_dispensary"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Emergency Contact Name"
+                                    android:textColor="#3C763D"
+                                    android:layout_weight="0.5"
+
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_emergency_name"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Emergency Contact No."
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_emergency_no"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Marital Status"
+                                    android:textColor="#3C763D"
+                                    android:layout_weight="0.5"
+
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_marital_status"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Marriage Date"
+                                    android:textColor="#3C763D"
+                                    android:layout_weight="0.5"
+
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Marriage_Date"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="No Of Children"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:layout_weight="0.5"
+
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_no_of_child"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:singleLine="true"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:singleLine="true"
+                                    android:text="Blood Group"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Blood_Group"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Height"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Height"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Weight"
+                                    android:layout_weight="0.5"
+
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Weight"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:weightSum="1"
+                                android:orientation="horizontal">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:singleLine="true"
+                                    android:text="Spectacles"
+                                    android:textColor="#3C763D"
+                                    android:textSize="16sp"
+                                    android:layout_weight="0.5"
+
+                                    />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_Spectacles"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="Present Address"
+                                    android:textColor="#3C763D"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_passport"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Passport No"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_passportno"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="Passport No."
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="PassportIssueDate"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_PassportIssueDate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="PassportIssueDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="PassportExpiryDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_PassportExpiryDate"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="PassportExpiryDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="PassportPlaceOfIssue"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+
+                                    android:id="@+id/tv_PassportPlaceOfIssue"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="PassportPlaceOfIssue"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+
+                                android:weightSum="1"
+                                android:orientation="horizontal"
+                                 android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="VehicleDetails"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_VehicleDetails"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="VehicleDetails"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="DrivingLicenseNo"
+                                    android:layout_weight="0.5"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DrivingLicenseNo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="DrivingLicenseNo"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+android:weightSum="1"                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="DrivingLicenseIssueDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DrivingLicenseIssueDate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+
+                                    android:layout_marginLeft="5dp"
+                                    android:text="DrivingLicenseIssueDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:orientation="horizontal"
+android:weightSum="1"                                android:gravity="center|left">
+
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="DrivingLicenseExpiryDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DrivingLicenseExpiryDate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="DrivingLicenseExpiryDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:orientation="horizontal"
+android:weightSum="1"
+                                android:gravity="center|left">
+
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="TwoWheeler"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_TwoWheeler"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+
+                                    android:layout_marginLeft="5dp"
+                                    android:text="TwoWheeler"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:id="@+id/tv_FourWheeler"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="FourWheeler"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_FourWheeler"
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.5"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="FourWheeler"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="DrugLicenseNo"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DrugLicenseNo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="DrugLicenseNo"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:weightSum="1"
+                                android:orientation="horizontal"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="DrugIssueDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DrugIssueDate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.5"
+                                    android:layout_marginLeft="5dp"
+                                    android:text="DrugIssueDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6">
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|left"
+                                android:orientation="horizontal"
+                                android:weightSum="1"
+                                android:gravity="center|left">
+
+                                <com.hrm.hrm.CustonStyle.TextviewRalewaybold
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+                                    android:text="DrugExpiryDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:id="@+id/tv_DrugExpiryDate"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0.5"
+
+                                    android:text="DrugExpiryDate"
+                                    android:textColor="#2A5F3D"
+                                    android:textSize="16sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#E6e6e6"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Qualifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_qualification"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_qualification"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_FamilyMembers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_famailymembers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_faimily"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_WokingCompanies"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_working_cmpny"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_working_cmpny"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Documents"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="#C9C9C9"
+                            android:gravity="center"
+                            android:weightSum="3">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Doc. Name"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Remark"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Doc. File"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_document"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_Documents"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Hobbies"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="#C9C9C9"
+                            android:gravity="center"
+                            android:weightSum="3">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight=".5"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="S.No."
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.25"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Hobby Name"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.25"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Hobby Remark"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_hobbies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_Hobbies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Achievements"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="#C9C9C9"
+                            android:gravity="center"
+                            android:weightSum="3">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Achievement Name"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Date"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Remark"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_Achievements"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_Achievements"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Skills"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="#C9C9C9"
+                            android:gravity="center"
+                            android:weightSum="3">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight=".5"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="S.No."
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.25"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Skill Name"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.25"
+                                android:gravity="center">
+
+                                <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Skill Remark"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="16sp"
+                                    android:visibility="visible" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                            android:id="@+id/lv_skills"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:divider="@null">
+
+
+                        </com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:id="@+id/tv_no_data_Skills"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_medical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.hrm.hrm.CustonStyle.TextViewRalewaynormal
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="150dp"
+                            android:gravity="center"
+                            android:text="No Data Found"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

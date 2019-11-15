@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "124478005194",
+    "firebase_url": "https://nitso-hrms-216809.firebaseio.com",
+    "project_id": "nitso-hrms-216809",
+    "storage_bucket": "nitso-hrms-216809.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124478005194:android:8ed6aaa5fdd72ecb",
+        "android_client_info": {
+          "package_name": "com.hrm.hrm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124478005194-bflstd8j8cqefa8s9q97hd9l59s58g91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hrm.hrm",
+            "certificate_hash": "6679da856c333f816ac03e8780bc2487e428bae4"
+          }
+        },
+        {
+          "client_id": "124478005194-mqbja422df4ocu19i3945o5qjj3en29p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuVvE3M1SGrWCD1S8mVK2laKwe4BMDLRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124478005194-mqbja422df4ocu19i3945o5qjj3en29p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
